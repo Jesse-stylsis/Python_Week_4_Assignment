@@ -1,36 +1,41 @@
 # Python_Week_4_Assignment
 # File Read & Write Challenge with Error Handling
 
-This Python program reads the content of an input file, modifies it (converts it to uppercase in this case), and writes the modified content to an output file. The program includes error handling to ensure smooth execution even if there are issues like missing files or read/write errors.
+This project demonstrates fundamental file handling and error management concepts in Python through two functions: **modifying file content** and **reading files with error handling**. These examples are practical, beginner-friendly, and useful for understanding how to manage file-related operations robustly.
+
+---
 
 ## Features
 
-- Read content from an input file.
-- Modify the content (convert it to uppercase).
-- Write the modified content to an output file.
-- Gracefully handle errors such as:
-  - File not found.
-  - Read/write permission issues.
-  - Unexpected errors.
+1. **File Read & Write Operation:**
+   - Reads content from a file.
+   - Modifies the content (e.g., converts text to uppercase).
+   - Writes the modified content to a new file.
 
-## Requirements
+2. **Error Handling:**
+   - Prompts the user for a filename and gracefully handles cases where:
+     - The file does not exist.
+     - The file cannot be read due to permission or other issues.
 
-- Python 3.12 or any version
+---
 
-## How to Use
+## Functions
 
-1. Ensure that you have Python 3.x installed. You can download it from the official [Python website](https://www.python.org/downloads/).
-   
-2. Download or clone the repository containing the Python script.
+### 1. `modify_file_content()`
 
-3. Save the provided Python code in a file, e.g., `file_read_write.py`.
+#### **Description**
+This function reads content from an input file, modifies it (e.g., converts text to uppercase), and writes the modified content to an output file.
 
-4. Open a terminal or command prompt and navigate to the directory where the Python file is saved.
+#### **How It Works**
+1. Reads the content of the input file.
+2. Modifies the content (e.g., converts text to uppercase).
+3. Writes the modified content to the output file.
 
-5. Run the program by executing:
+#### **Usage**
+1. Call the function with the names of the input and output files:
+   ```python
+   modify_file_content('input.txt', 'output.txt')
 
-   ```bash
-   python file_read_write.py
    
 6. The program will prompt you to enter:
 - **Input filename**: The name of the file to read from.
